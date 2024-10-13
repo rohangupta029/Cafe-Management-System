@@ -24,6 +24,6 @@ public class UserRestImpl implements UserRest {
             ex.printStackTrace();
         }
 
-        return ResponseEntity<String>("{\"message\":\"Something went Wrong\"}", HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<String>("{\"message\":\""+ "Something went wrong at product service." +"\"}", HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }
